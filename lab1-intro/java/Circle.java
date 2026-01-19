@@ -1,5 +1,6 @@
 class Circle {
 
+  //main constructor
   public static void main(String[] args) {
     int size = 15; // Integer.parseInt(args[0]);
     Circle c = new Circle(size);

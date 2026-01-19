@@ -9,6 +9,7 @@ class Circle {
     }
   }
 
+  //size of circle
   public Circle(int size) {
     this.size = size;
   }

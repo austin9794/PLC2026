@@ -2,6 +2,7 @@ import java.util.stream.*;
 
 class CircleFP {
 
+  //main constructor
   public static void main(String[] args) {
     int size = Integer.parseInt(args[0]);
     CircleFP c = new CircleFP(size);

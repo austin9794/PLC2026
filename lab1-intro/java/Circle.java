@@ -27,6 +27,7 @@ class Circle {
     return result.toString();
   }
 
+  //circle paint
   private Boolean shouldPaint(int i, int jj){
     int j = jj/2;
     return shouldPaintS(size,i,j);

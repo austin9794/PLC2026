@@ -1,7 +1,7 @@
 module Intro1 where
 
 -- define named constants:
-r1 = 1
+r1 = 4
 r2 = b^3 + 1/b where b = 3
 
 -- define a function:

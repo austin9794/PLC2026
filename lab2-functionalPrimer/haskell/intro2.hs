@@ -10,7 +10,7 @@ pname3 = print "Bob"
 myprogram = print (1 + m)  -- compiler error: m undefined
 m = 1                      -- unless this line is also present
 
--- sequencing several imperative programs:
+-- sequencing several imperative programs:gfr
 prg1 = do
   print "hello " 
   print name  -- level of indentation is important

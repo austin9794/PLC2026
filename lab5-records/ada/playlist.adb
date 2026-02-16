@@ -27,14 +27,21 @@ procedure PlayList is
          end record; 
 
     procedure Put_Item (i : Item) is
-    begin
-        Put (To_String (i.name));
-        Put (" by ");
-        Put_Person (i.performer);
-        Put (" (");
-        Put (i.length_secs, aft => 1, exp => 0);
-        Put ("s)");
-    end Put_Item;
+    begin 
+      case i.item_variant is 
+         when Piece => 
+            Put (To_String (i.name)); 
+            Put (" by "); 
+            Put_Person (i.performer); 
+            Put (" ("); 
+            Put (i.length_secs, aft => 1, exp => 0); 
+            Put ("s)"); 
+         when Pause => 
+            Put ("Pause ("); 
+            Put (i.length_secs, aft => 1, exp => 0); 
+            Put ("s)"); 
+      end case; 
+   end Put_Item; 
 
     piece1 : Item :=
    ( item_variant => piece,

@@ -22,6 +22,11 @@ data Item
             item_performer :: Person,
             item_length_secs :: Float
         }
+        |
+      Pause
+        {
+            item_length_secs :: Float
+        }
     deriving (Eq)
 
 instance (Show Item) where

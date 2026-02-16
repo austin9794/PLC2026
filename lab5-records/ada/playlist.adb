@@ -37,10 +37,12 @@ procedure PlayList is
     end Put_Item;
 
     piece1 : Item :=
-       (name => To_Unbounded_String ("Moonlight Sonata"),
-        performer => (name => To_Unbounded_String ("Claudio Arrau")),
-        length_secs => 17.0*60.0+26.0
-       );
+   ( item_variant => piece,
+     name => To_Unbounded_String ("Moonlight Sonata"),
+     performer => (name => To_Unbounded_String ("Claudio Arrau")),
+     length_secs => 17.0*60.0+26.0
+   );
+
 
      pause1 : Item :=
         (
